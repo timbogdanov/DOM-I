@@ -139,7 +139,6 @@ navItemsStyle.forEach(function(item) {
 });
 
 
-
 const newFirstLink = document.createElement('a');
 newFirstLink.textContent = 'First Link';
 
@@ -150,3 +149,10 @@ const wholeNav = document.querySelector('nav');
 
 wholeNav.prepend(newFirstLink);
 wholeNav.appendChild(newLastLink);
+
+
+// STRETCH GOAL
+
+document.querySelector('.cta-text button').onclick = function() {
+  document.querySelector('.cta-text button').style.backgroundColor = 'orange';
+}
