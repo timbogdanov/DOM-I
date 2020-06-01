@@ -33,10 +33,59 @@ const siteContent = {
     "email" : "sales@greatidea.io",
   },
   "footer": {
-    "copyright" : "Copyright Great Idea! 2018"
+    "copyright" : "Copyright Great Idea! 2020"
   },
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// let logo = document.getElementById("logo-img");
+// logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const logo = document.getElementById('logo-img');
+logo.src = siteContent["nav"]["img-src"];
+
+const ctaImage = document.getElementById('cta-img');
+ctaImage.src = siteContent["cta"]["img-src"];
+
+const middleImage = document.getElementById('middle-img');
+middleImage.src = siteContent["main-content"]["middle-img-src"];
+
+
+// TASK 2
+
+const button = document.querySelector('.cta-text button');
+button.textContent = 'Get Started';
+
+const domIsAwesome = document.querySelector('.cta-text h1');
+domIsAwesome.textContent = `DOM IS AWESOME`;
+
+const navItem1 = document.querySelector('nav a:nth-of-type(1)');
+navItem1.textContent = siteContent["nav"]["nav-item-1"];
+
+const navItem2 = document.querySelector('nav a:nth-of-type(2)');
+navItem2.textContent = siteContent["nav"]["nav-item-2"];
+
+const navItem3 = document.querySelector('nav a:nth-of-type(3)');
+navItem3.textContent = siteContent["nav"]["nav-item-3"];
+
+const navItem4 = document.querySelector('nav a:nth-of-type(4)');
+navItem4.textContent = siteContent["nav"]["nav-item-4"];
+
+const navItem5 = document.querySelector('nav a:nth-of-type(5)');
+navItem5.textContent = siteContent["nav"]["nav-item-5"];
+
+const navItem6 = document.querySelector('nav a:nth-of-type(6)');
+navItem6.textContent = siteContent["nav"]["nav-item-6"];
+
+
+const featuresH4 = document.querySelector('.top-content .text-content h4');
+featuresH4.textContent = siteContent['main-content']['features-h4'];
+
+const featuresP = document.querySelector('.top-content .text-content p');
+featuresP.textContent = siteContent['main-content']['features-content'];
+
+const aboutH4 = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
+aboutH4.textContent = siteContent['main-content']['about-h4'];;
+
+const aboutP = document.querySelector('.top-content .text-content:nth-of-type(2) p');
+aboutP.textContent = siteContent['main-content']['about-content'];;
