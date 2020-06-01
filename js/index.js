@@ -127,3 +127,26 @@ contactEmail.textContent = siteContent['contact']['email'];
 
 const footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
+
+
+
+// TASK 3
+
+const navItemsStyle = document.querySelectorAll('nav a');
+
+navItemsStyle.forEach(function(item) {
+  item.style.color = 'green';
+});
+
+
+
+const newFirstLink = document.createElement('a');
+newFirstLink.textContent = 'First Link';
+
+const newLastLink = document.createElement('a');
+newLastLink.textContent = 'Last Link';
+
+const wholeNav = document.querySelector('nav');
+
+wholeNav.prepend(newFirstLink);
+wholeNav.appendChild(newLastLink);
